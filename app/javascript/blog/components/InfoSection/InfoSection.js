@@ -56,7 +56,6 @@ const InfoSection = ({
                             <Img src={img} alt={alt} />
                         </ImgWrapper>
                     </InfoColumn>   
-                    <iframe width="550" height="314" src="https://www.youtube.com/embed/FjU_x1106pg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> 
 
                 </InfoRow>
             </Container>   

@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
 export const InfoSec = styled.div`
-    color: #fff;
+    color: black;
     padding: 160px 0;
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+    padding-bottom: 190px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background: ${({ lightBg }) => (lightBg ? '#A1D0C5' : 'url(https://images.unsplash.com/photo-1479502806991-251c94be6b15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)')};
+    background-size: cover;
 `;
 
 export const InfoRow = styled.div`

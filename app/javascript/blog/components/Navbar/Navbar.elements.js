@@ -1,40 +1,54 @@
 import styled from 'styled-components';
-import { FaMagento } from 'react-icons/fa';
+import { GiStrawberry } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
+
 export const Nav = styled.nav`
-    background: #101522;
-    height: 80px;
+    overflow: visible;
+    opacity: 0.8;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: #fff;
+    z-index: 99;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-family: Roboto Slab;
     position: sticky;
+    border-color: #fff;
+   
     top: 0;
     z-index: 999;
+
 `;
 
 export const NavbarContainer = styled(Container)`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 65px;
 
 ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-    color: #fff;
+
+    color: black;  
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 1rem;
+    font-family: unset;
     display: flex;
     align-items: center;
-`
+`;
 
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(GiStrawberry)`
 margin-right: 0.5rem;
+background-color: black;
 `;
 
 export const MobileIcon = styled.div`
@@ -49,15 +63,16 @@ display: none;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+ 
 }
 `;
-
+//bar menu icon avec transition hamburger 
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
-
+    background: #fff;
  @media screen and (max-width: 960px) {
      display: flex;
      flex-direction: column;
@@ -66,18 +81,21 @@ export const NavMenu = styled.ul`
      position: absolute;
      top: 80px;
      left: ${({click})  => (click ? 0 : '-100%')};
-     opacity: 1;
+     //opacity: 2;
      transition: all 0.5s ease;
-     background: #101522; 
+     background-color: #fff; 
+     font-family: Roboto Slab;
  }
 `;
 
 export const NavItem = styled.li`
     height: 80px;
-    border-bottom: 2px solid transparent;
-
+    border-bottom: 2px solid transparent ;
+    
+   
 &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 6px solid black;
+    
 }
 
 @media screen and (max-width: 960px) {
@@ -88,13 +106,16 @@ export const NavItem = styled.li`
     }
 }
 `
+// nav bar produits service home 
+
 export const NavLinks = styled(Link)`
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-family: Roboto Slab;
 
     @media screen and (max-width: 960px) {
         text-align: center;
@@ -103,7 +124,7 @@ export const NavLinks = styled(Link)`
         display: table;
 
         &:hover {
-            color: #4b59f7;
+            color: black;
             transition: all 0.3s ease;
         }
     }
@@ -115,6 +136,7 @@ export const NavItemBtn = styled.li`
     justify-content: center;
     width: 100%;
     height: 120px;
+ 
 }
 `
 export const NavBtnLink = styled(Link)`
@@ -127,5 +149,5 @@ export const NavBtnLink = styled(Link)`
     width: 100%;
     border: none;
     outline: none;
-
+ 
 `;

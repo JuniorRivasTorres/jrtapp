@@ -4,13 +4,13 @@ export const homeObjOne = {
     imgStart:'',
     lightTopLine:true,
     lightTextDesc: true,
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Premier avis',
     description: 'We help business owners increase their reveneu. Our team of unique specialist can help you acheive yor busi',
     headline: 'Lead Generation Specialiat for online buisnees',
     lightText: true,
     topLine: 'Margeting Agnecy',
-    img: require('../../images/svg-1.svg'),
-    alt: 'Image',
+    //img: require('../../images/photo mme chien.jpg'),
+    
     start:''
 };
 
