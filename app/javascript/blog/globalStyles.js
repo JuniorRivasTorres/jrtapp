@@ -32,8 +32,8 @@ background-size: cover;
 
 
 export const Button = styled.button`
- border-radius: 4px;
- background: ${({primary}) => (primary ? 'grey' : 'black')};
+ border-radius: 8px;
+ background: ${({primary}) => (primary ? '#ac1010' : 'black')};
  white-space: nowrap;
  padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
  color: #fff;
@@ -45,7 +45,7 @@ export const Button = styled.button`
  &:hover {
      transition: all 0.3s ease-out;
      background: black;
-     background: ${({primary}) => (primary ? '#B5A5C8' : '#C4FCEF')};
+     background: ${({primary}) => (primary ? '#C4FCEF' : '#B5A5C8')};
  }
 
  @media screen and (max-width: 960px) {
