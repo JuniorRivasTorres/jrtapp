@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 
 export const InfoSec = styled.div`
-    color: #fff;
+    color: black;
     padding: 160px 0;
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+    padding-bottom: 190px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background: ${({ lightBg }) => (lightBg ? '#A1D0C5' : 'url(https://images.unsplash.com/photo-1479502806991-251c94be6b15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)')};
+    //background: linear-gradient(45deg, rgb(149 150 152 / 20%), rgba(41 43 47 / 31%));
+    background-size: cover;
+    
 `;
 
 export const InfoRow = styled.div`
     display: flex;
+    background: linear-gradient(45deg, rgb(149 150 152 / 20%), rgba(41 43 47 / 31%));
     margin: 0 -15px -15px -15px;
     flex-wrap: wrap;
     align-items: center;
@@ -53,7 +61,7 @@ export const Heading = styled.h1`
 margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
-color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};
+color: ${({lightText}) => (lightText ? '#fff' : '#1c2237')};
 `
 export const Subtitle = styled.p`
     max-width: 440px;
