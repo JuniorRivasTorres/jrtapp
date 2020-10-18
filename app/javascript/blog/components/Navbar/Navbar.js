@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: '#C4FCEF' }}>
+            <IconContext.Provider value={{ color: '#AC1010' }}>
             <Nav>
               <NavbarContainer>
                   <NavLogo to='/' onClick={closeMobileMenu}>
